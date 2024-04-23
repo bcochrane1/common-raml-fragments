@@ -1,0 +1,13 @@
+{
+  "main": "commonfragments.raml",
+  "name": "CommonAPIFragment",
+  "groupId": "5854e6ad-4c66-47c0-921e-72092756f614",
+  "assetId": "commonapifragment",
+  "version": "1.0.3",
+  "classifier": "raml-fragment",
+  "tags": [],
+  "descriptorVersion": "1.0.0",
+  "organizationId": "5854e6ad-4c66-47c0-921e-72092756f614",
+  "apiVersion": "v1",
+  "originalFormatVersion": "1.0"
+}
