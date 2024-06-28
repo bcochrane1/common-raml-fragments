@@ -1,7 +1,7 @@
 {
   "main": "commonfragments.raml",
   "name": "CommonAPIFragment",
-  "groupId": "5854e6ad-4c66-47c0-921e-72092756f614",
+  "groupId": "81d8cf1b-6238-4dbb-8222-6c9419508ffb",
   "assetId": "commonapifragment",
   "version": "1.0.3",
   "classifier": "raml-fragment",
