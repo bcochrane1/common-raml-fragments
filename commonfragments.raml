@@ -54,10 +54,12 @@ resourceTypes:
   batch-job:
     post?:
       description: Create a new batch job for <<resourcePathName|!singularize>> 
+      is: [client-id-required, success-batch-201, fault-400, fault-401, fault-404, fault-405, fault-406, fault-415, fault-500, fault-501] 
       body:
         application/json:
           type: <<resourcePathName|!singularize>>
-      is: [client-id-required, success-batch-201, fault-400, fault-401, fault-404, fault-405, fault-406, fault-415, fault-500, fault-501] 
+          example: |
+            <<post-batch-job-request>>
   collection:
     usage: Use this resourceType to represent any collection of items
     description: A collection of <<resourcePathName |!singularize>>
