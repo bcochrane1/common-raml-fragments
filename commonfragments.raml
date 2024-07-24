@@ -52,7 +52,7 @@ resourceTypes:
       is: [client-id-required, ping-response, fault-400, fault-401, fault-404, fault-405, fault-406, fault-415, fault-500, fault-501]  
       
   batch-job:
-    post:
+    post?:
       description: Create a new batch job for <<resourcePathName|!singularize>> 
       body:
         application/json:
