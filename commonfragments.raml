@@ -83,7 +83,7 @@ resourceTypes:
   entity:
     usage: Use this resourceType to represent any single item
     description: Entity representing a <<resourcePathName|!singularize>>
-    get:
+    get?:
       description: Get <<resourcePathName|!singularize>>
       responses:
         200:
@@ -94,7 +94,7 @@ resourceTypes:
 
       is: [client-id-required, correlation-id, fault-400, fault-401, fault-404, fault-405, fault-406, fault-415, fault-500, fault-501]
 
-    post:
+    post?:
       description: Create new <<resourcePathName|!singularize>> record
       body:
         application/json:
@@ -103,7 +103,7 @@ resourceTypes:
 
       is: [client-id-required, correlation-id, fault-501, success-201, fault-400, fault-401, fault-404, fault-405, fault-406, fault-415, fault-500]
 
-    patch:
+    patch?:
       description: Update <<resourcePathName|!singularize>> record partially
       body:
         application/json:
@@ -112,7 +112,7 @@ resourceTypes:
 
       is: [client-id-required, correlation-id, fault-501, success-200, fault-400, fault-401, fault-404, fault-405, fault-406, fault-415, fault-500]     
 
-    put:
+    put?:
       description: Update <<resourcePathName|!singularize>> record entirely
       body:
         application/json:
@@ -121,7 +121,7 @@ resourceTypes:
 
       is: [client-id-required, correlation-id, fault-501, success-200, fault-400, fault-401, fault-404, fault-405, fault-406, fault-415, fault-500, fault-501]
 
-    delete:
+    delete?:
       description: Delete <<resourcePathName|!singularize>> record
       is: [client-id-required, correlation-id, success-200, fault-400, fault-401, fault-404, fault-405, fault-406, fault-415, fault-500, fault-501]
 
