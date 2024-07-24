@@ -108,7 +108,7 @@ resourceTypes:
       body:
         application/json:
           type: <<resourcePathName|!singularize>>
-          example: <<patch-entityexample-ref>>
+          example: <<patch-entity-example-ref>>
 
       is: [client-id-required, correlation-id, fault-501, success-200, fault-400, fault-401, fault-404, fault-405, fault-406, fault-415, fault-500]     
 
@@ -117,13 +117,17 @@ resourceTypes:
       body:
         application/json:
           type: <<resourcePathName|!singularize>>
-          example: <<example-ref>>
+          example: <<put-entity-example-ref>>
 
       is: [client-id-required, correlation-id, fault-501, success-200, fault-400, fault-401, fault-404, fault-405, fault-406, fault-415, fault-500, fault-501]
 
     delete:
       description: Delete <<resourcePathName|!singularize>> record
       is: [client-id-required, correlation-id, success-200, fault-400, fault-401, fault-404, fault-405, fault-406, fault-415, fault-500, fault-501]
+      response:
+        200:
+          body:
+            application/js
 
 
 
