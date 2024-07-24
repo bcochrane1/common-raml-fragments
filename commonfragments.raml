@@ -68,7 +68,7 @@ resourceTypes:
           body:
             application/json:
               type: <<resourcePathName>>[]
-              example: <<example-ref2>>
+              example: <<get-collection-example-ref>>
 
       is: [client-id-required, correlation-id, fault-400, fault-401, fault-404, fault-405, fault-406, fault-415, fault-500, fault-501]
 
@@ -77,7 +77,7 @@ resourceTypes:
       body:
         application/json:
           type: <<resourcePathName>>[]
-          example: <<example-ref2>>
+          example: <<post-collection-example-ref>>
 
       is: [client-id-required, correlation-id, fault-501, success-201-collection, fault-400, fault-401, fault-404, fault-405, fault-406, fault-415, fault-500]   
   entity:
@@ -90,7 +90,7 @@ resourceTypes:
           body:
             application/json:
               type: <<resourcePathName|!singularize>>
-              example: <<example-ref>>   
+              example: <<get-entity-example-ref>>   
 
       is: [client-id-required, correlation-id, fault-400, fault-401, fault-404, fault-405, fault-406, fault-415, fault-500, fault-501]
 
@@ -99,7 +99,7 @@ resourceTypes:
       body:
         application/json:
           type: <<resourcePathName|!singularize>>
-          example: <<example-ref>>
+          example: <<post-entity-example-ref>>
 
       is: [client-id-required, correlation-id, fault-501, success-201, fault-400, fault-401, fault-404, fault-405, fault-406, fault-415, fault-500]
 
@@ -108,7 +108,7 @@ resourceTypes:
       body:
         application/json:
           type: <<resourcePathName|!singularize>>
-          example: <<example-ref>>
+          example: <<patch-entityexample-ref>>
 
       is: [client-id-required, correlation-id, fault-501, success-200, fault-400, fault-401, fault-404, fault-405, fault-406, fault-415, fault-500]     
 
