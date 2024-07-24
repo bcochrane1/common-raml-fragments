@@ -93,7 +93,6 @@ resourceTypes:
         200:
           body:
             application/json:
-              type: <<resourcePathName|!singularize>>
               example: | 
                 <<get-entity-example-response>>   
 
@@ -104,7 +103,6 @@ resourceTypes:
       is: [client-id-required, correlation-id, fault-501, success-201, fault-400, fault-401, fault-404, fault-405, fault-406, fault-415, fault-500]
       body:
         application/json:
-          type: <<resourcePathName|!singularize>>
           example: | 
             <<post-entity-example-request>>
 
