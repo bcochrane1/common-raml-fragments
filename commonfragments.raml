@@ -61,7 +61,7 @@ resourceTypes:
   collection:
     usage: Use this resourceType to represent any collection of items
     description: A collection of <<resourcePathName |!singularize>>
-    get:
+    get?:
       description: Get all <<resourcePathName>>, optionally filtered 
       responses:
         200:
@@ -72,7 +72,7 @@ resourceTypes:
 
       is: [client-id-required, correlation-id, fault-400, fault-401, fault-404, fault-405, fault-406, fault-415, fault-500, fault-501]
 
-    post:
+    post?:
       description: Create one or more new <<resourcePathName>> 
       body:
         application/json:
